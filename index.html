@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bato Pick Games</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="function.js"></script>
+</head>
+<body>
+    
+ <div class="container" id="container">
+        <h1>Papel Gunting Bato</h1>
+        <div class="game-area">
+            <span id="playernames">
+                <p>Player 1</p>
+                <p>Player 2</p>
+            </span>
+            <div class="player1" id="imgbox">
+                <img src="/image/paper-hand.png" alt="" class="images" id="P1">
+            </div>
+            <div class="vs"><H3>VS</H3></div>
+            <div class="player2" id="imgbox">
+                <img src="/image/paper-hand.png" alt="" class="images" id="P2">
+            </div>
+            <span class="scoring-area">
+                <div class="score1" id="score1">
+                    0
+                </div>
+                <div class="result" id="result">
+                    ---
+                </div>
+                <div class="score2" id="score2">
+                    0
+                </div>
+            </span>
+            <button onclick="play()" class="playbttn" id="playbttn">Play</button>
+            <button onclick="playagain()" class="playbttn" id="pg">Play Again</button>
+            <button onclick="newgame()" class="playbttn" id="ng">New Game</button>
+        </div>
+ </div>
+
+</body>
+</html>

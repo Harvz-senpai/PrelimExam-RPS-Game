@@ -1,0 +1,174 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+
+    display: flexbox;
+    justify-content: center;
+    border: 1px solid black;
+    width: 800px;
+    height: 600px;
+}
+.container h1{
+    text-align: center;
+}
+.game-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 500px;
+    width: 800px;
+}
+#playernames {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 650px;
+    margin-top: -400px;
+    font-size: 26px;
+}
+#imgbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player1 {
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    height: 300px;
+    width: 300px;
+}
+.player1 img {
+    height: 280px;
+    width: 280px;
+}
+#P1 {
+    transform: scaleX(1);
+}
+.player2 {
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    height: 300px;
+    width: 300px;
+}
+.player2 img {
+    height: 280px;
+    width: 280px;
+}
+#P2 {
+    transform: scaleX(-1);
+}
+.scoring-area
+{
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 160px;
+    position: absolute;
+    border: 1px solid black;
+    height: 40px;
+    width: 650px;
+    margin-top: 360px;
+}
+.playbttn {
+    position: absolute;
+    margin-top: 450px;
+    width: 90px;
+    height: 30px;
+    transition: 0.2s;
+    font-weight: bolder;
+}
+.playbttn:hover {
+    scale: 0.9;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+#pg {
+    display: none;
+}
+#ng {
+    display: none;
+}
+
+
+/* For Responsive */
+
+@media screen and (max-width: 485px) {
+    body {
+        flex-direction: column;
+    }
+   .container {
+        height: auto;
+        width: 460px;
+    }
+    .scoring-area {
+        width: 412px;
+        right: 30px;
+        gap: 100px;
+    }
+    .game-area {
+        width: 460px;
+        height: 500px;
+    }
+    .game-area #playernames {
+        width: 400px;
+    }
+    .game-area .player1{
+        width: 140px;
+        height: 140px;
+    }
+    .game-area .player2{
+        width: 140px;
+        height: 140px;
+    }
+    .game-area .player1 .images{
+        width: 120px;
+        height: 120px;
+    }
+    .game-area .player2 .images{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .container
+    {
+        width: 410px;
+    }
+    .scoring-area {
+        width: 370px;
+    }
+    .playbttn {
+        right: 170px;
+    }
+    .game-area {
+        width: 408px;
+    }
+
+}
+
+@media screen and (max-width: 393px) {
+
+    .container
+    {
+        width: 380px;
+    }
+    .scoring-area {
+        width: 350px;
+        right: 21px;
+    }
+    .playbttn {
+        right: 150px;
+    }
+    .game-area {
+        width: 380px;
+        height: 500px;
+    }
+}
